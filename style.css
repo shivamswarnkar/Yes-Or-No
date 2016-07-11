@@ -1,0 +1,100 @@
+*{
+	box-sizing: border-box;
+	padding:0px;
+	margin: 0;
+	font-family: "Arial"
+}
+
+body{
+	background-color:orange;
+}
+
+header{
+	background-color: purple;
+	color:white;
+	text-align: center;
+	width:100%;
+	height:20vh;
+	padding:5vh;
+}
+
+
+#question{
+
+	width: 50%;
+	height:50vh;
+	margin:7.5% 0 0 0;
+	background-color: black;
+	color:white;
+	border: 5px solid white;
+	padding:5vw;
+	position: relative;
+	float: left;
+
+
+}
+
+#question:hover{
+	border: 5px solid yellow;
+}
+
+#myname, #word, #num, #bool {
+	width: 50%;
+	margin:3%;
+	border-radius: 5px;
+}
+
+#myname:focus, #word:focus, #num:focus{
+	background-color: pink;
+	color:brown;
+}
+
+#word{
+	margin-left: 6%;
+}
+
+#num, #bool{
+	margin-left: 7%;
+}
+
+#send{
+	position: absolute;
+	bottom:5%;
+	left: 30%;
+	width: 30%;
+	text-align: center;
+	color:brown;
+	background-color: pink;
+	border-radius: 5px;
+}
+
+#send:hover{
+	background-color: hotpink;
+}
+
+
+#content{
+	width: 50%;
+	height:50vh;
+	margin:7.5% 0 0 0;
+	background-color: black;
+	color:white;
+	border: 5px solid white;
+	padding:5vw;
+	position: relative;
+	float: left;
+	line-height: 1.5em;
+}
+
+#content:hover{
+	border: 5px solid yellow;
+}
+
+/*------------Media Query------------*/
+@media (max-width:750px ){
+	#question, #content{
+		clear:both;
+		width:100%;
+	}
+
+}
